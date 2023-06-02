@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-fixed bg-cover bg-center h-screen" style="background-image: url('images/pethomepage.jpg'); height: 100vh;">
+    <div class="grid place-items-start h-screen mx-10 gap-10">
+        <div class="self-end">
+            <div class="flex">
+                <h1 class="text-white text-6xl font-bold italic font-serif align-text-bottom">Welcome to Pawsome</h1>
+                <h2 class="text-sky-400 text-6xl font-bold italic font-serif">Adoptions</h2>
+            </div>
+        </div>
+        <div class="grid gap-3">
+            <input type="text" class="border border-gray-300 px-4 py-2 rounded-md w-64 h-15 ml-auto" placeholder="Enter username">
+            <input type="text" class="border border-gray-300 px-4 py-2 rounded-md w-64 h-15 ml-auto" placeholder="Enter password">
+            <button class="bg-blue-500 text-white rounded-xl h-10 hover:bg-blue-200 hover:text-black" onclick="redirectToHome()">SUBMIT</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToHome() {
+            // Redirect to home.html
+            window.location.href = "home.html";
+        }
+    </script>
+</body>
+</html>
